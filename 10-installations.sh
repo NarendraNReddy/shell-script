@@ -8,7 +8,7 @@ then
 else 
      echo "Super User:"  
 fi
-dnf instal mysql -y
+dnf install mysql -y
 
 if [ $? -ne 0 ];
 then 
@@ -16,6 +16,16 @@ then
     exit 1
 else 
     echo "Installation of mysql is ... SUCCESS"
-fi        
+fi     
+
+dnf install git -y
+
+if [ $? -ne 0 ];
+then 
+    echo "Installation of git is ..FAILURE"
+    exit 1
+else 
+    echo "Installation of git is ... SUCCESS"
+fi   
 
 
