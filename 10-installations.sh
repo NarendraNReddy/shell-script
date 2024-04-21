@@ -8,7 +8,7 @@ then
 else 
      echo "Super User:"  
 fi
-dnf instll  mysql -y
+dnf install  mysql -y
 
 
 
