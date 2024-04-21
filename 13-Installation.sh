@@ -19,11 +19,11 @@ else
      echo "Super User:"  
 fi
 
-dnf install mysql -y
+dnf installt mysql -y
 VALIDATE $? "mysql installation"
 
 
-dnf install git -y
+dnf installt git -y
 VALIDATE $? "git installation"
 
 
