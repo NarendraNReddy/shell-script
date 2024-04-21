@@ -5,7 +5,8 @@ if [ $USERID -ne 0 ];
 then 
     echo "Please be a super user"
 else 
-     dnf install mysql -y   
+     "Super User:"  
 fi
+dnf instll  mysql -y
 
 
