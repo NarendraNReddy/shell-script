@@ -33,7 +33,7 @@ do
 
     if [ $? -eq 0 ];
     then 
-        echo -e "Already installed...$B SKIPPING $N"       
+        echo -e "$i Already installed...$B SKIPPING $N"       
     else 
         dnf install $i -y &>>$LOGFILE
         VALIDATE $? "$i installation"    
