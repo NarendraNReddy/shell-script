@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NUMBER=11
-if [ $NUMBER -le 10 ];
+if [ $NUMBER -lt 10 ];
 then 
     echo "Number is less than 10"
 else
