@@ -8,7 +8,7 @@ then
 else 
      echo "Super User:"  
 fi
-dnf install  mysql -y
+dnf instal mysql -y
 
 if [ $? -ne 0 ];
 then 
