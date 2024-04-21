@@ -10,5 +10,5 @@ echo "Home :$HOME"
 echo "Hostname :$HOSTNAME"
 
 echo "Pid of current program : $$"
-sleep 60 &
+sleep 60 
 echo "Last background process:$!"
