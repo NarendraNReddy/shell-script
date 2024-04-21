@@ -30,6 +30,7 @@ for i in $@;
 do 
     
     dnf installed list $i &>>$LOGFILE
+    echo $?
     if [ $? -ne 0 ];
     then 
         dnf install $i -y &>>$LOGFILE
