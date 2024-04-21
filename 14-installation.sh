@@ -31,12 +31,13 @@ do
     
     dnf list installed $i &>>$LOGFILE
 
-    if [ $? -eq 0 ];
+    if [ $? -ne 0 ];
     then 
-        echo -e "$i Already installed...$B SKIPPING $N"       
-    else 
         dnf install $i -y &>>$LOGFILE
-        VALIDATE $? "$i installation"    
+        VALIDATE $? "$i installation"
+    else
+        echo -e "$i Already installed...$B SKIPPING $N"           
+    
     fi    
 done 
 
