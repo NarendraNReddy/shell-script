@@ -28,7 +28,14 @@ fi
 
 for i in $@;
 do 
-    echo $i
+    echo "Start installation of $i"
+    dnf installed list $i &>>$LOGFILE
+    if [ $? -ne 0 ];
+    then 
+        dnf install $i -y &>>$LOGFILE        
+    else 
+        echo -e "Already installed...$B SKIPPING $N"    
+    fi    
 done 
 
 
