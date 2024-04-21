@@ -19,7 +19,7 @@ else
      echo "Super User:"  
 fi
 
-dnf installt mysql -y
+dnf install mysql -y
 VALIDATE $? "mysql installation"
 
 
