@@ -30,12 +30,12 @@ for i in $@;
 do 
     
     dnf installed list $i &>>$LOGFILE
-    if [ $? -ne 0 ];
+    if [ $? -eq 0 ];
     then 
-        dnf install $i -y &>>$LOGFILE
-        VALIDATE $? "$i installation"        
+        echo -e "Already installed...$B SKIPPING $N"       
     else 
-        echo -e "Already installed...$B SKIPPING $N"    
+        dnf install $i -y &>>$LOGFILE
+        VALIDATE $? "$i installation"    
     fi    
 done 
 
