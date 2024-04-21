@@ -1,4 +1,6 @@
 #!/bin/bash
+TIMESTAMP=$(date +%F-%H-%M-%S)
+echo $TIMESTAMP
 
 VALIDATE()
 {
@@ -23,7 +25,7 @@ dnf install mysql -y
 VALIDATE $? "mysql installation"
 
 
-dnf installt git -y
+dnf install git -y
 VALIDATE $? "git installation"
 
 
