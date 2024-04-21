@@ -2,8 +2,12 @@
 
 VALIDATE()
 {
-    echo $1
-    echo $2
+    if [ $1 -ne 0 ];
+    then 
+        echo "$2...FAILURE"
+    else
+        echo "$2...SUCCESS"    
+    fi
 }
 
 USERID=$(id -u)
