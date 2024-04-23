@@ -14,6 +14,6 @@ else
     echo -e "$R No dir:$SOURCE_DIRECTORY exists $N\n"   
 fi
 
-FILES=$(find . -name "*.log" -mtime +14)
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +14)
 
 echo $FILES
