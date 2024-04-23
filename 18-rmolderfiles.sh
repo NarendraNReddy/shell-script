@@ -12,4 +12,8 @@ then
     echo -e "$G Dir:$SOURCE_DIRECTORY exists $N\n"
 else 
     echo -e "$R No dir:$SOURCE_DIRECTORY exists $N\n"   
-fi 
+fi
+
+FILES=$(find . -name "*.log" -mtime +14)
+
+echo $FILES
