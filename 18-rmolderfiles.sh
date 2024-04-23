@@ -9,7 +9,7 @@ SOURCE_DIRECTORY="/tmp/app-logs"
 
 if [ -d $SOURCE_DIRECTORY ];
 then 
-    echo -e "$G Dir:$SOURCE_DIRECTORY exists $N\n"
+    echo -e "$G Source Dir exists $N\n"
 else 
     echo -e "$R No dir:$SOURCE_DIRECTORY exists $N\n"   
 fi
