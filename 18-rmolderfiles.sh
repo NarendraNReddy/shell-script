@@ -16,4 +16,4 @@ fi
 
 FILES=$(find . -name "*.log" -mtime +14)
 
-echo FILES
+echo $FILES
